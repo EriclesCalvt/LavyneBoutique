@@ -22,7 +22,7 @@ document.querySelector("#Share-btn").addEventListener("click", async () => {
   } catch (err) {
     console.error("Erro ao compartilhar:", err.message);
     if (navigator.share) {
-      alert("navegador suporta compartilhamento");
+      //Navegador suporta compartilhamento
     } else {
       alert("navegador não suporta compartilhamento");
       shareButton.addEventListener("click", async () => {
