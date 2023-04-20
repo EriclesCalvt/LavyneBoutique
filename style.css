@@ -52,3 +52,6 @@ strong {
   width: 13vw;
   cursor: pointer;
 }
+a {
+  color: black;
+}
