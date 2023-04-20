@@ -1,0 +1,52 @@
+body {
+  background-color: #f8e3ea;
+}
+strong {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: bold;
+}
+.all {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px;
+}
+#Logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#Logo img {
+  border-radius: 50%;
+  height: 25vh;
+  margin-top: 5vh;
+}
+#Insta {
+  display: flex;
+  justify-content: center;
+}
+#Buttons button {
+  background-color: #f8e3ea;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 10vh;
+}
+#Buttons div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 5vh;
+  justify-content: center;
+}
+#Share {
+  display: flex;
+  justify-content: center;
+}
+#Share button {
+  background-color: #f8e3ea;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 10vh;
+  width: 13vw;
+}
