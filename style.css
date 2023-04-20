@@ -31,6 +31,7 @@ strong {
   border: 2px solid black;
   border-radius: 20px;
   height: 10vh;
+  cursor: pointer;
 }
 #Buttons div {
   display: flex;
@@ -49,4 +50,5 @@ strong {
   border-radius: 10px;
   height: 10vh;
   width: 13vw;
+  cursor: pointer;
 }
