@@ -21,21 +21,20 @@ document.querySelector("#Share-btn").addEventListener("click", async () => {
     });
   } catch (err) {
     console.error("Erro ao compartilhar:", err.message);
-  }
-
-  if (navigator.share) {
-    alert("navegador suporta compartilhamento");
-  } else {
-    alert("navegador não suporta compartilhamento");
-    shareButton.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText("https://seu-link.com");
-        alert(
-          "Link copiado para a área de transferência. Cole-o manualmente para compartilhar."
-        );
-      } catch (err) {
-        console.error("Erro ao copiar:", err.message);
-      }
-    });
+    if (navigator.share) {
+      alert("navegador suporta compartilhamento");
+    } else {
+      alert("navegador não suporta compartilhamento");
+      shareButton.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText("https://seu-link.com");
+          alert(
+            "Link copiado para a área de transferência. Cole-o manualmente para compartilhar."
+          );
+        } catch (err) {
+          console.error("Erro ao copiar:", err.message);
+        }
+      });
+    }
   }
 });
